@@ -4,7 +4,7 @@ package dice;
 import java.util.Random; // to use random number generator
 
 public class Dice {
-	int spots; // the number of spots up on the die
+	 int spots; // the number of spots up on the die
 	// This is a random number generator provided by the Java API
 	private static Random generator;
 
@@ -23,6 +23,16 @@ public class Dice {
 
 	//write a method to determine if two Dice objects are equals
 	
+	public boolean isEquals(Dice other){
+		
+		return this.spots == other.spots;
+		
+	}
 	//write a method that prints a Die
 
+	public String toString(){
+		
+		return "" + this.spots; 
+
+	} 
 }
